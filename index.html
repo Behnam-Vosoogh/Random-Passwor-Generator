@@ -13,9 +13,15 @@
         <input type="text" id="password" placeholder="password" />
         <img src="images/copy.png" alt="Copy_Icon" />
       </div>
-      <button>
+      <button onclick="passGenerator()">
         <img src="images/generate.png" alt="generate_Icon" />Generate Password
       </button>
+      <div class="slider-container">
+        <label for="length">Password Length:</label>
+        <input type="range" id="length" min="8" max="30" value="12" />
+        <span id="lengthValue">12</span>
+      </div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
